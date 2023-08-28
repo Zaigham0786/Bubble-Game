@@ -18,7 +18,7 @@ var erroraudio = function () {
     Success("error.mp3")
 }
 /// above sectiom is for au
-var timer = 0
+var timer = 30
 const runTimer = () => {
     var timerval = setInterval(() => {
         if (timer > 0) {
