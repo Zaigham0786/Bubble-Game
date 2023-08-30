@@ -18,7 +18,7 @@ var erroraudio = function () {
     Success("error.mp3")
 }
 /// above sectiom is for au
-var timer = 30
+var timer = 60
 const runTimer = () => {
     var timerval = setInterval(() => {
         if (timer > 0) {
@@ -29,8 +29,7 @@ const runTimer = () => {
             clearInterval(timerval)
             document.querySelector(".bottommain").innerHTML = `
             <div id="result">
-              <p>Game Over</p>
-              <p>Your Score : <span>${score}</span></p>
+              <p>You Scored : <span>${score}</span></p>
               
             </div>
 

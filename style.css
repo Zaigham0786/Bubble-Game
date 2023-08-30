@@ -15,23 +15,35 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  background: #F0FFFF;
+  background-image: url("https://img.freepik.com/free-photo/dark-gray-wall-with-wooden-plank-product-background_53876-128557.jpg?w=1380&t=st=1693377831~exp=1693378431~hmac=4dc6cb340bf4b3b63b8ae5ae1e6a5d702e564bdfb8684d58de4b89e3947edbbf");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   justify-content: center;
   align-items: center;
 }
 .main .inner {
-  background-color: #D8BFD8;
-  width: 800px;
+  width: 600px;
   border-radius: 20px;
   height: 90%;
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .main .inner .top {
   width: 100%;
+  background-color: #5fcfbe;
   height: 100px;
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid #dadada;
 }
 .main .inner .top .topin {
   width: 30%;
@@ -39,24 +51,25 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column-reverse;
 }
 .main .inner .top .topin p {
-  font-size: 20px;
-  color: #6A5ACD;
+  font-size: 16px;
+  color: #022c27;
   border: 1px solid white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-weight: bolder;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
 .main .inner .top .topin h4 {
   font-size: 20px;
-  color: #6A5ACD;
-  padding: 15px;
+  color: black;
+  padding: 10px 20px;
   border-radius: 10px;
   background: white;
 }
 .main .inner .bottommain {
-  background: #E6E6FA;
+  background: #e7e7e7;
   width: 100%;
   height: calc(100% - 100px);
   display: flex;
@@ -75,9 +88,14 @@ body {
 }
 .main .inner .bottommain .bottom .bubble {
   margin: 10px;
-  width: 60px;
-  height: 60px;
-  background: #9932CC;
+  width: 40px;
+  height: 40px;
+  background: #61a8a1;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   display: flex;
   justify-content: center;
@@ -90,19 +108,24 @@ body {
 .main .inner .bottommain #result {
   width: 100%;
   height: 100%;
+  background-image: url("https://images2.alphacoders.com/125/1258544.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-end;
 }
 .main .inner .bottommain #result p {
   font-size: 34px;
   font-weight: bold;
-  color: red;
+  color: whitesmoke;
   margin-top: 20px;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #dadada;
 }
 .main .inner .bottommain #result p span {
-  color: purple;
+  color: white;
   margin-left: 20px;
 }
 .main .inner .bottommain #result p:nth-child(2) {
@@ -114,10 +137,5 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 0;
-  }
-}
-@media only screen and (max-width: 588px) {
-  .main .inner .top p {
-    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
